@@ -13,7 +13,7 @@ use App\Http\Livewire\Student;
 use Illuminate\Support\Facades\Route;
 
 
-Route::group(['middleware' => 'auth'], function () {
+// Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
     Route::get('/author', Author::class)->name('author');
@@ -24,7 +24,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/issue-book', IssueBook::class)->name('issue_book');
     Route::get('/report', Report::class)->name('report');
     Route::get('/setting', Setting::class)->name('setting');
-});
+// });
 
 
 Route::group(['middleware' => 'guest'], function () {
